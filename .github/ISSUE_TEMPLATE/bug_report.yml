@@ -1,0 +1,49 @@
+name: バグ報告
+description: バグや予期しない挙動を報告する
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグを報告いただきありがとうございます！調査できるよう、以下の情報を記入してください。
+  - type: textarea
+    id: description
+    attributes:
+      label: バグの説明
+      description: バグの内容を明確かつ簡潔に説明してください。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 挙動を再現する手順を記載してください。
+      placeholder: |
+        1. '...' に移動する
+        2. '...' をクリックする
+        3. エラーが表示される
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される挙動
+      description: どうなることを期待していましたか？
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット
+      description: 該当する場合は、問題の説明に役立つスクリーンショットを添付してください。
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境
+      description: 関連する環境の詳細を記入してください。
+      placeholder: |
+        - OS: [例: macOS 15, Windows 11]
+        - ブラウザー: [例: Chrome 130, Safari 18]
+        - Node.js バージョン: [例: 20.x]
+    validations:
+      required: true
