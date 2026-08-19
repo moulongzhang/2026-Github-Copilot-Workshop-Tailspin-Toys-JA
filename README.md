@@ -2,6 +2,15 @@
 
 > このリポジトリは [github-samples/tailspin-toys](https://github.com/github-samples/tailspin-toys)（MIT License）を日本語ワークショップ向けに翻訳したものです。アプリケーションのソースコードは原典のままで、ドキュメント・指示ファイル・スキル・Issue のみを日本語化しています。
 
+> [!NOTE]
+> **コミット履歴の著者表記について**
+>
+> 最初の 2 件のコミット（`027f2f8`、`213fc70`）は、著者が `William Zhang <williamzhang@users.noreply.github.com>` と記録されています。これは AI エージェントによる作業中に、この環境の git 設定（`zhang.william <moulongzhang@github.com>`）を確認せず、作業ディレクトリのパスから推測した値が使われたためです。
+>
+> このメールアドレスは GitHub 上の無関係なアカウント `WilliamZhang` の noreply アドレス形式と一致するため、コミット一覧ではそのアカウントにリンクされて表示されます。**当該アカウントの所有者はこのリポジトリに一切関与していません。**
+>
+> Git のコミット著者は自己申告のテキストフィールドであり、署名がない限り検証されません。この経緯を記録として残すため、履歴の書き換えは行っていません。実際の作業者およびリポジトリのオーナーは [@moulongzhang](https://github.com/moulongzhang) です。
+
 Tailspin Toys は、開発者向けのテーマを持つゲームのクラウドファンディングプラットフォームです。このプロジェクトは架空のゲームクラウドファンディング企業向けの Web サイトで、単一の [Astro](https://astro.build/) サイト（完全にプリレンダリングされた静的出力）として構築され、[Tailwind CSS](https://tailwindcss.com/) でスタイリングされています。データはローカルの SQLite データベースに格納され、[Drizzle ORM](https://orm.drizzle.team/) と Node.js 組み込みの SQLite ドライバー経由でアクセスします。ページはビルド時にフロントマターでデータベースを直接クエリするため、独立したバックエンドサービスはありません。
 
 ## アーキテクチャ
