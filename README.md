@@ -94,11 +94,11 @@ npm run typecheck:all    # 上記の両方
 
 このプロジェクトは、品質保証を支援する Copilot のカスタマイズを同梱しています:
 
-### Database Explorer Canvas
+### Database Explorer キャンバス
 
 共有の **Database Explorer** canvas（`.github/extensions/database-explorer/`）は、プロジェクトの SQLite テーブルを閲覧し、一度に 1 つの読み取り専用 `SELECT` または `WITH` クエリを実行するための小さな UI とエージェントアクションを提供します。`.data/tailspin.db`（または `DATABASE_URL` が設定されている場合はそれ）のデータベースを使用するため、新しいチェックアウトで開く前に `npm run db:setup` を実行してください。
 
-### PR Readiness Agent
+### PR Readiness エージェント
 
 **PR Readiness** エージェント（`.github/agents/pr-readiness.md`）は、PR 前の品質ゲートです。pull request を開く前に実行して、次のことを行います:
 
@@ -108,7 +108,7 @@ npm run typecheck:all    # 上記の両方
 - Playwright MCP を介してブラウザーで機能を手動検証する（毎回必須）
 - go/no-go レポートを作成する
 
-### quality-checks Skill
+### quality-checks スキル
 
 **quality-checks** スキル（`.github/skills/quality-checks/SKILL.md`）は、プロジェクトの npm テストと lint コマンドを、詳細なデバッグとトラブルシューティングの手順書とともにラップします。次の場合に `/quality-checks` から使用します:
 
@@ -116,7 +116,7 @@ npm run typecheck:all    # 上記の両方
 - テストの失敗（ポートの競合、古いサーバー、不安定なテスト、CI との差異）を診断するとき
 - コミット、プッシュ、マージの前に準備状況を検証するとき
 
-### GitHub Copilot App Run Menu
+### GitHub Copilot app の Run メニュー
 
 [GitHub Copilot app](https://github.com/github/github-app) は
 `.github/github-app.yml` を読み取り、**Run** メニューにプロジェクトのコマンドを提供します。

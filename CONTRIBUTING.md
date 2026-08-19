@@ -12,14 +12,14 @@ Tailspin Toys への貢献に関心をお寄せいただきありがとうござ
 
 ## はじめに
 
-### Prerequisites
+### 前提条件
 
 アプリケーションをローカルで実行・テストする前に、以下をインストールする必要があります:
 
 - **Node.js 22.13+** - [Download](https://nodejs.org/) | [Homebrew](https://formulae.brew.sh/formula/node)
 - **Git** - [Download](https://git-scm.com/downloads) | [Homebrew](https://formulae.brew.sh/formula/git)
 
-### Setting Up Your Development Environment
+### 開発環境のセットアップ
 
 1. リポジトリをフォークしてクローンします:
    ```bash
@@ -49,7 +49,7 @@ Tailspin Toys への貢献に関心をお寄せいただきありがとうござ
 
 ## 変更を加える
 
-### Data Layer (Drizzle + Node SQLite)
+### データレイヤー（Drizzle + Node SQLite）
 
 - `db/schema.ts` でテーブルを定義します。スキーマ変更後は `npm run db:generate` でマイグレーションを生成します
 - すべての関数のパラメーターと戻り値に型ヒントを使用します
@@ -58,7 +58,7 @@ Tailspin Toys への貢献に関心をお寄せいただきありがとうござ
 - 提出前にテストを実行します: `npm run test:unit`
    - すべてのテストがパスする必要があります
 
-### Frontend (Astro)
+### フロントエンド（Astro）
 
 - UI は `.astro` ページとコンポーネントとして構築し、フロントマターでデータをクエリします（静的出力）
 - Tailwind CSS のユーティリティクラスを使ってダークテーマに従います
@@ -68,11 +68,11 @@ Tailspin Toys への貢献に関心をお寄せいただきありがとうござ
 
 ## Pull Request の提出
 
-### Issues
+### Issue
 
 すべての変更リクエストは Issue から始める必要があります。Issue を PR と併せて作成しても構いませんが、Issue は必ず作成しなければなりません。
 
-### Workflow
+### ワークフロー
 
 1. 変更用に `main` から新しいブランチを作成します:
    ```bash
@@ -97,7 +97,7 @@ Tailspin Toys への貢献に関心をお寄せいただきありがとうござ
 
 6. pull request がレビューされてマージされるのを待ちます。
 
-### Pull Request Guidelines
+### Pull Request のガイドライン
 
 - 適切な pull request テンプレートを使用し、すべてのセクションを記入してください。
 - 変更は焦点を絞ってください。関連のない複数の変更がある場合は、別々の pull request として提出してください。

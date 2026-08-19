@@ -5,7 +5,7 @@ allowed-tools:
   - shell
 ---
 
-# Quality Checks
+# 品質チェック（quality-checks）
 
 これは単一の Astro アプリケーション（Astro 7 + Drizzle ORM / Node SQLite）です。すべてのコマンドは npm スクリプト経由でリポジトリのルートから実行します。
 
